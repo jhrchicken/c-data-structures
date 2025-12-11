@@ -32,9 +32,23 @@
 		5B2A821C2EEAE4F300AF083E /* stackS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stackS; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B2A82292EEAF22D00AF083E /* Exceptions for "c-data-structures" folder in "c-data-structures" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				stackL.c,
+				stackS.c,
+			);
+			target = 5B2A82042EEADA5400AF083E /* c-data-structures */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5B2A82072EEADA5400AF083E /* c-data-structures */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B2A82292EEAF22D00AF083E /* Exceptions for "c-data-structures" folder in "c-data-structures" target */,
+			);
 			path = "c-data-structures";
 			sourceTree = "<group>";
 		};

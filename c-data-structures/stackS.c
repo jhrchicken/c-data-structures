@@ -1,19 +1,24 @@
+//
+//  stackS.c
+//  c-data-structures
+//
+//  Created by 하림 on 12/11/25.
+//
+
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 #pragma warning(disable:4996)
 
+#define STACK_SIZE 5
+
 typedef int element;
+element stack[STACK_SIZE];
 
-typedef struct stackNode {
-    element data;
-    struct stackNode *link;
-} stackNode;
+int top = -1;
 
-stackNode *top;
-
-// 함수의 원형 선언
+// 함수의 원형선언
 int isStackEmpty(void);
+int isStackFull(void);
 void push(element item);
 element pop(void);
 element peek(void);
@@ -50,7 +55,7 @@ int main(void) {
 
 // 스택이 공백 상태인지 확인하는 연산
 int isStackEmpty(void) {
-    if (top == NULL) {
+    if (top == -1) {
         return 1;
     }
     else {
@@ -58,29 +63,35 @@ int isStackEmpty(void) {
     }
 }
 
-// 스택의 top에 원소를 삽입하는 언산
+// 스택이 포화 상태인지 확인하는 연산
+int isStackFull(void) {
+    if (top == STACK_SIZE - 1) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
+// 스택의 top에 원소를 삽입하는 연산
 void push(element item) {
-    stackNode *tmp = (stackNode*)malloc(sizeof(stackNode));
-    
-    tmp->data = item;
-    tmp->link = top;
-    top = tmp;
+    if (isStackFull()) {
+        printf("STACK IS FULL!\n");
+        return;
+    }
+    else {
+        stack[++top] = item;
+    }
 }
 
 // 스택의 top에서 원소를 삭제하는 연산
 element pop(void) {
-    element item;
-    stackNode *tmp = top;
-    
     if (isStackEmpty()) {
         printf("STACK IS EMPTY!\n");
         return 0;
     }
     else {
-        item = tmp->data;
-        top = tmp->link;
-        free(tmp);
-        return item;
+        return stack[top--];
     }
 }
 
@@ -91,17 +102,16 @@ element peek(void) {
         return 0;
     }
     else {
-        return (top->data);
+        return stack[top];
     }
 }
 
-// 스택의 원소를 top에서 bottom 순서로 출력하는 연산
+// 스택의 원소를 출력하는 연산
 void printStack(void) {
-    stackNode *p = top;
+    int i;
     printf("STACK : [ ");
-    while(p) {
-        printf("%d ", p->data);
-        p = p->link;
+    for (i = 0; i <= top; i++) {
+        printf("%d ", stack[i]);
     }
     printf("]\n\n");
 }
