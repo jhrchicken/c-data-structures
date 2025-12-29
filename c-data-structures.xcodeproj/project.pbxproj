@@ -40,6 +40,7 @@
 				queueS.c,
 				stackL.c,
 				stackS.c,
+				threadBT.c,
 				traversalBT.c,
 			);
 			target = 5B2A82042EEADA5400AF083E /* c-data-structures */;
