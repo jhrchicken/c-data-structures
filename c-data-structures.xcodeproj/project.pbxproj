@@ -36,8 +36,10 @@
 		5B2A82292EEAF22D00AF083E /* Exceptions for "c-data-structures" folder in "c-data-structures" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				queueS.c,
 				stackL.c,
 				stackS.c,
+				traversalBT.c,
 			);
 			target = 5B2A82042EEADA5400AF083E /* c-data-structures */;
 		};
