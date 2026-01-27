@@ -1,3 +1,10 @@
+//
+//  adjMatrix.c
+//  c-data-structures
+//
+//  Created by 하림 on 1/27/26.
+//
+
 #include <stdio.h>
 #include <stdlib.h>
 #pragma warning(disable:4996)
