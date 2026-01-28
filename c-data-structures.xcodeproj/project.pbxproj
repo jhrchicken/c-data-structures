@@ -39,6 +39,7 @@
 				adjList.c,
 				adjMatrix.c,
 				bst.c,
+				DFS.c,
 				folderSize.c,
 				queueS.c,
 				stackL.c,
