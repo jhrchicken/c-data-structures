@@ -38,6 +38,7 @@
 			membershipExceptions = (
 				adjList.c,
 				adjMatrix.c,
+				BFS.c,
 				bst.c,
 				DFS.c,
 				folderSize.c,
