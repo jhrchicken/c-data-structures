@@ -42,6 +42,7 @@
 				bst.c,
 				DFS.c,
 				dijkstra.c,
+				floyd.c,
 				folderSize.c,
 				queueS.c,
 				stackL.c,
