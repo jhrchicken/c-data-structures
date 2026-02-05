@@ -4,7 +4,6 @@
 //
 //  Created by 하림 on 12/29/25.
 //
-
 #include<stdio.h>
 #include<stdlib.h>
 #pragma warning(disable:4996)

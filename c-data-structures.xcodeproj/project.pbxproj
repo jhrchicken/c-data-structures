@@ -36,9 +36,16 @@
 		5B2A82292EEAF22D00AF083E /* Exceptions for "c-data-structures" folder in "c-data-structures" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				adjList.c,
+				adjMatrix.c,
+				BFS.c,
 				bst.c,
+				DFS.c,
+				dijkstra.c,
+				floyd.c,
 				folderSize.c,
 				queueS.c,
+				selectSort.c,
 				stackL.c,
 				stackS.c,
 				threadBT.c,
