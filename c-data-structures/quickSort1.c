@@ -1,5 +1,5 @@
 //
-//  quickSort.c
+//  quickSort1.c
 //  c-data-structures
 //
 //  Created by 하림 on 2/5/26.
