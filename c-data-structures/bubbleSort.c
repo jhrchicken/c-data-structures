@@ -14,12 +14,13 @@ int main(void) {
     int size = sizeof(list) / sizeof(list[0]);
     
     // 정렬 전의 원소 출력
-    printf("\n정렬할 원소 : ");
+    printf("\n정렬할 원소 >>\n\t");
     for (i = 0; i < size; i++) {
         printf("%3d ", list[i]);
     }
+    printf("\n");
     
-    // 선택 정렬 함수 호출
+    // 버블 정렬 함수 호출
     bubbleSort(list, size);
     
     return 0;
@@ -28,7 +29,7 @@ int main(void) {
 void bubbleSort(int a[], int size) {
     int i, j, t, temp;
     
-    for (i = size - 1; i > 0; i++) {
+    for (i = size - 1; i > 0; i--) {
         printf("\n%d단계 >> ", size - i);
         for (j = 0; j < i; j++) {
             if (a[j] > a[j + 1]) {
@@ -37,6 +38,7 @@ void bubbleSort(int a[], int size) {
                 a[j + 1] = temp;
             }
             
+            printf("\n\t");
             for (t = 0; t < size; t++) {
                 printf("%3d ", a[t]);
             }

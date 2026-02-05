@@ -1,3 +1,10 @@
+//
+//  quickSort.c
+//  c-data-structures
+//
+//  Created by 하림 on 2/5/26.
+//
+
 #include <stdio.h>
 #pragma warning(disable:4996)
 

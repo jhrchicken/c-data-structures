@@ -46,6 +46,7 @@
 				floyd.c,
 				folderSize.c,
 				queueS.c,
+				quickSort.c,
 				selectSort.c,
 				stackL.c,
 				stackS.c,
