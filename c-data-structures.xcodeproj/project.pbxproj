@@ -36,6 +36,7 @@
 				floyd.c,
 				folderSize.c,
 				insertionSort.c,
+				mergeSort.c,
 				queueS.c,
 				quickSort1.c,
 				quickSort2.c,
