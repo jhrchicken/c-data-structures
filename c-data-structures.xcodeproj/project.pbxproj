@@ -16,20 +16,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		5B2A821A2EEAE4F300AF083E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B2A82052EEADA5400AF083E /* c-data-structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-data-structures"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B2A821C2EEAE4F300AF083E /* stackS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stackS; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -77,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B2A82192EEAE4F300AF083E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				5B2A82052EEADA5400AF083E /* c-data-structures */,
-				5B2A821C2EEAE4F300AF083E /* stackS */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,25 +111,6 @@
 			productReference = 5B2A82052EEADA5400AF083E /* c-data-structures */;
 			productType = "com.apple.product-type.tool";
 		};
-		5B2A821B2EEAE4F300AF083E /* stackS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B2A82202EEAE4F300AF083E /* Build configuration list for PBXNativeTarget "stackS" */;
-			buildPhases = (
-				5B2A82182EEAE4F300AF083E /* Sources */,
-				5B2A82192EEAE4F300AF083E /* Frameworks */,
-				5B2A821A2EEAE4F300AF083E /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = stackS;
-			packageProductDependencies = (
-			);
-			productName = stackS;
-			productReference = 5B2A821C2EEAE4F300AF083E /* stackS */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,9 +123,6 @@
 					5B2A82042EEADA5400AF083E = {
 						CreatedOnToolsVersion = 26.1.1;
 						LastSwiftMigration = 2610;
-					};
-					5B2A821B2EEAE4F300AF083E = {
-						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
 			};
@@ -181,20 +141,12 @@
 			projectRoot = "";
 			targets = (
 				5B2A82042EEADA5400AF083E /* c-data-structures */,
-				5B2A821B2EEAE4F300AF083E /* stackS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B2A82012EEADA5400AF083E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B2A82182EEAE4F300AF083E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,22 +292,6 @@
 			};
 			name = Release;
 		};
-		5B2A82212EEAE4F300AF083E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5B2A82222EEAE4F300AF083E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,15 +309,6 @@
 			buildConfigurations = (
 				5B2A820D2EEADA5400AF083E /* Debug */,
 				5B2A820E2EEADA5400AF083E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B2A82202EEAE4F300AF083E /* Build configuration list for PBXNativeTarget "stackS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B2A82212EEAE4F300AF083E /* Debug */,
-				5B2A82222EEAE4F300AF083E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
