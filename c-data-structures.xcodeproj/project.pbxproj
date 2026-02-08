@@ -16,10 +16,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		87F44CF32F3886E7009E769E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B2A82052EEADA5400AF083E /* c-data-structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-data-structures"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F44CF52F3886E7009E769E /* RadixSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RadixSort; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -60,10 +70,22 @@
 			path = "c-data-structures";
 			sourceTree = "<group>";
 		};
+		87F44CF62F3886E7009E769E /* RadixSort */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RadixSort;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B2A82022EEADA5400AF083E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F44CF22F3886E7009E769E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2A82072EEADA5400AF083E /* c-data-structures */,
+				87F44CF62F3886E7009E769E /* RadixSort */,
 				5B2A82062EEADA5400AF083E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2A82052EEADA5400AF083E /* c-data-structures */,
+				87F44CF52F3886E7009E769E /* RadixSort */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +138,28 @@
 			productReference = 5B2A82052EEADA5400AF083E /* c-data-structures */;
 			productType = "com.apple.product-type.tool";
 		};
+		87F44CF42F3886E7009E769E /* RadixSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F44CF92F3886E7009E769E /* Build configuration list for PBXNativeTarget "RadixSort" */;
+			buildPhases = (
+				87F44CF12F3886E7009E769E /* Sources */,
+				87F44CF22F3886E7009E769E /* Frameworks */,
+				87F44CF32F3886E7009E769E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				87F44CF62F3886E7009E769E /* RadixSort */,
+			);
+			name = RadixSort;
+			packageProductDependencies = (
+			);
+			productName = RadixSort;
+			productReference = 87F44CF52F3886E7009E769E /* RadixSort */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +172,9 @@
 					5B2A82042EEADA5400AF083E = {
 						CreatedOnToolsVersion = 26.1.1;
 						LastSwiftMigration = 2610;
+					};
+					87F44CF42F3886E7009E769E = {
+						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
@@ -144,12 +193,20 @@
 			projectRoot = "";
 			targets = (
 				5B2A82042EEADA5400AF083E /* c-data-structures */,
+				87F44CF42F3886E7009E769E /* RadixSort */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B2A82012EEADA5400AF083E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F44CF12F3886E7009E769E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,6 +358,22 @@
 			};
 			name = Release;
 		};
+		87F44CFA2F3886E7009E769E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87F44CFB2F3886E7009E769E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -318,6 +391,15 @@
 			buildConfigurations = (
 				5B2A820D2EEADA5400AF083E /* Debug */,
 				5B2A820E2EEADA5400AF083E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F44CF92F3886E7009E769E /* Build configuration list for PBXNativeTarget "RadixSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F44CFA2F3886E7009E769E /* Debug */,
+				87F44CFB2F3886E7009E769E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
