@@ -16,6 +16,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8739C25B2F388AF3000A5301 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8739C2662F388B62000A5301 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		87F44CF32F3886E7009E769E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		5B2A82052EEADA5400AF083E /* c-data-structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-data-structures"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8739C25D2F388AF3000A5301 /* HeapSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HeapSort; sourceTree = BUILT_PRODUCTS_DIR; };
+		8739C2682F388B62000A5301 /* TreeSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreeSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F44CF52F3886E7009E769E /* RadixSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RadixSort; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +90,16 @@
 			path = "c-data-structures";
 			sourceTree = "<group>";
 		};
+		8739C25E2F388AF3000A5301 /* HeapSort */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HeapSort;
+			sourceTree = "<group>";
+		};
+		8739C2692F388B62000A5301 /* TreeSort */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TreeSort;
+			sourceTree = "<group>";
+		};
 		87F44CF62F3886E7009E769E /* RadixSort */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RadixSort;
@@ -79,6 +109,20 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B2A82022EEADA5400AF083E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8739C25A2F388AF3000A5301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8739C2652F388B62000A5301 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,6 +144,8 @@
 			children = (
 				5B2A82072EEADA5400AF083E /* c-data-structures */,
 				87F44CF62F3886E7009E769E /* RadixSort */,
+				8739C25E2F388AF3000A5301 /* HeapSort */,
+				8739C2692F388B62000A5301 /* TreeSort */,
 				5B2A82062EEADA5400AF083E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +155,8 @@
 			children = (
 				5B2A82052EEADA5400AF083E /* c-data-structures */,
 				87F44CF52F3886E7009E769E /* RadixSort */,
+				8739C25D2F388AF3000A5301 /* HeapSort */,
+				8739C2682F388B62000A5301 /* TreeSort */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +184,50 @@
 			);
 			productName = "c-data-structures";
 			productReference = 5B2A82052EEADA5400AF083E /* c-data-structures */;
+			productType = "com.apple.product-type.tool";
+		};
+		8739C25C2F388AF3000A5301 /* HeapSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8739C2632F388AF3000A5301 /* Build configuration list for PBXNativeTarget "HeapSort" */;
+			buildPhases = (
+				8739C2592F388AF3000A5301 /* Sources */,
+				8739C25A2F388AF3000A5301 /* Frameworks */,
+				8739C25B2F388AF3000A5301 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8739C25E2F388AF3000A5301 /* HeapSort */,
+			);
+			name = HeapSort;
+			packageProductDependencies = (
+			);
+			productName = HeapSort;
+			productReference = 8739C25D2F388AF3000A5301 /* HeapSort */;
+			productType = "com.apple.product-type.tool";
+		};
+		8739C2672F388B62000A5301 /* TreeSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8739C26C2F388B62000A5301 /* Build configuration list for PBXNativeTarget "TreeSort" */;
+			buildPhases = (
+				8739C2642F388B62000A5301 /* Sources */,
+				8739C2652F388B62000A5301 /* Frameworks */,
+				8739C2662F388B62000A5301 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8739C2692F388B62000A5301 /* TreeSort */,
+			);
+			name = TreeSort;
+			packageProductDependencies = (
+			);
+			productName = TreeSort;
+			productReference = 8739C2682F388B62000A5301 /* TreeSort */;
 			productType = "com.apple.product-type.tool";
 		};
 		87F44CF42F3886E7009E769E /* RadixSort */ = {
@@ -173,6 +265,12 @@
 						CreatedOnToolsVersion = 26.1.1;
 						LastSwiftMigration = 2610;
 					};
+					8739C25C2F388AF3000A5301 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					8739C2672F388B62000A5301 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					87F44CF42F3886E7009E769E = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -194,12 +292,28 @@
 			targets = (
 				5B2A82042EEADA5400AF083E /* c-data-structures */,
 				87F44CF42F3886E7009E769E /* RadixSort */,
+				8739C25C2F388AF3000A5301 /* HeapSort */,
+				8739C2672F388B62000A5301 /* TreeSort */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B2A82012EEADA5400AF083E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8739C2592F388AF3000A5301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8739C2642F388B62000A5301 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,6 +472,38 @@
 			};
 			name = Release;
 		};
+		8739C2612F388AF3000A5301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8739C2622F388AF3000A5301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8739C26D2F388B62000A5301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8739C26E2F388B62000A5301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		87F44CFA2F3886E7009E769E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +537,24 @@
 			buildConfigurations = (
 				5B2A820D2EEADA5400AF083E /* Debug */,
 				5B2A820E2EEADA5400AF083E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8739C2632F388AF3000A5301 /* Build configuration list for PBXNativeTarget "HeapSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8739C2612F388AF3000A5301 /* Debug */,
+				8739C2622F388AF3000A5301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8739C26C2F388B62000A5301 /* Build configuration list for PBXNativeTarget "TreeSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8739C26D2F388B62000A5301 /* Debug */,
+				8739C26E2F388B62000A5301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
